@@ -12,9 +12,6 @@
 		49FD0A102B672AC9008DAE26 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FD0A0F2B672AC9008DAE26 /* Item.swift */; };
 		49FD0A122B672ACB008DAE26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49FD0A112B672ACB008DAE26 /* Assets.xcassets */; };
 		49FD0A162B672ACB008DAE26 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49FD0A152B672ACB008DAE26 /* Preview Assets.xcassets */; };
-		49FD0A202B672ACC008DAE26 /* SwiftUIPieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FD0A1F2B672ACC008DAE26 /* SwiftUIPieTests.swift */; };
-		49FD0A2A2B672ACC008DAE26 /* SwiftUIPieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FD0A292B672ACC008DAE26 /* SwiftUIPieUITests.swift */; };
-		49FD0A2C2B672ACC008DAE26 /* SwiftUIPieUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FD0A2B2B672ACC008DAE26 /* SwiftUIPieUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,10 +40,7 @@
 		49FD0A132B672ACB008DAE26 /* SwiftUIPie.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftUIPie.entitlements; sourceTree = "<group>"; };
 		49FD0A152B672ACB008DAE26 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		49FD0A1B2B672ACC008DAE26 /* SwiftUIPieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIPieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		49FD0A1F2B672ACC008DAE26 /* SwiftUIPieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPieTests.swift; sourceTree = "<group>"; };
 		49FD0A252B672ACC008DAE26 /* SwiftUIPieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIPieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		49FD0A292B672ACC008DAE26 /* SwiftUIPieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPieUITests.swift; sourceTree = "<group>"; };
-		49FD0A2B2B672ACC008DAE26 /* SwiftUIPieUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPieUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +72,6 @@
 			isa = PBXGroup;
 			children = (
 				49FD0A0A2B672AC9008DAE26 /* SwiftUIPie */,
-				49FD0A1E2B672ACC008DAE26 /* SwiftUIPieTests */,
-				49FD0A282B672ACC008DAE26 /* SwiftUIPieUITests */,
 				49FD0A092B672AC9008DAE26 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -113,23 +105,6 @@
 				49FD0A152B672ACB008DAE26 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		49FD0A1E2B672ACC008DAE26 /* SwiftUIPieTests */ = {
-			isa = PBXGroup;
-			children = (
-				49FD0A1F2B672ACC008DAE26 /* SwiftUIPieTests.swift */,
-			);
-			path = SwiftUIPieTests;
-			sourceTree = "<group>";
-		};
-		49FD0A282B672ACC008DAE26 /* SwiftUIPieUITests */ = {
-			isa = PBXGroup;
-			children = (
-				49FD0A292B672ACC008DAE26 /* SwiftUIPieUITests.swift */,
-				49FD0A2B2B672ACC008DAE26 /* SwiftUIPieUITestsLaunchTests.swift */,
-			);
-			path = SwiftUIPieUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,7 +247,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49FD0A202B672ACC008DAE26 /* SwiftUIPieTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,8 +254,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49FD0A2A2B672ACC008DAE26 /* SwiftUIPieUITests.swift in Sources */,
-				49FD0A2C2B672ACC008DAE26 /* SwiftUIPieUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
