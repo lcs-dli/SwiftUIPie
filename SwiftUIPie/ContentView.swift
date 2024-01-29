@@ -22,14 +22,15 @@ struct ContentView: View {
     var body: some View {
         Chart{
             ForEach(coffeeSales, id: \.name){ coffee in
-                BarMark(
-                    x: .value("Name", coffee.name),
-                    y: .value("count", coffee.count)
+                SectorMark(
+                    angle: .value("count", coffee.count)
                     )
                 .foregroundStyle(by: .value("Type name", coffee.name))
                 
+                
             }
         }
+        .frame(height: 500)
         
         
     }
