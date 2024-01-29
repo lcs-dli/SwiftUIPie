@@ -18,7 +18,9 @@ struct ContentView: View {
         (name: "Mocha", count: 320),
         (name: "Affogato", count: 50)
     ]
-
+    @State private var selectedCount: Int?
+    @State var selectedSector: String?
+    
     var body: some View {
         Chart{
             ForEach(coffeeSales, id: \.name){ coffee in
@@ -41,10 +43,28 @@ struct ContentView: View {
             Text("☕")
                 .font(.system(size: 100))
         }
+        .chartAngleSelection(value: $selectedCount)
+        .onChange(of: selectedCount){oldValue, newValue in
+            if let newValue {
+                selectedSector = findSelectedSector(value: newValue)
+            }else{
+                selectedSector = nil
+            }
+        }
+        .opacity(selectedCount == nil ? 1.0 : (selectedSector == coffee.name ? 1.0 : 0.5))
         
         
     }
-
+    private func findSelectedSector(value: Int) -> String?{
+        var accumulatedCount = 0
+        
+        let coffee = coffeeSales.first{(_,count) in
+            accumulatedCount += count
+            return value<=accumulatedCount
+        }
+        
+        return coffee?.name
+    }
     
 }
 
