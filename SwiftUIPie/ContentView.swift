@@ -24,7 +24,8 @@ struct ContentView: View {
             ForEach(coffeeSales, id: \.name){ coffee in
                 SectorMark(
                     angle: .value("count", coffee.count),
-                    outerRadius: coffee.name == "Latte" ? 150 : 120, angularInset: 2.0
+                    innerRadius: .ratio(0.65),
+                    angularInset: 2.0
                     )
                 .foregroundStyle(by: .value("Type name", coffee.name))
                 .annotation(position: .overlay){
@@ -32,8 +33,7 @@ struct ContentView: View {
                         .font(.headline)
                         .foregroundColor(.white)
                 }
-                
-                
+                .cornerRadius(10.0)
             }
         }
         .frame(height: 500)
