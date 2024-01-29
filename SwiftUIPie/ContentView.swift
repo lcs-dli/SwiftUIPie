@@ -37,6 +37,10 @@ struct ContentView: View {
             }
         }
         .frame(height: 500)
+        .chartBackground{ proxy in
+            Text("☕")
+                .font(.system(size: 100))
+        }
         
         
     }
